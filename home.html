@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SAIT Comrades</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon Logo -->
+  <link rel="icon" href="Images/SAITComradesLOGO.png" type="image/png" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <a href="home.html" class="logo">
+    <img src="Images/SAITComradesLOGO.png" alt="SAIT Logo">
+    <h2>SAIT COMRADES</h2>
+  </a>
+
+  <!-- Toggler Button -->
+  <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">News</a>
+    <a href="#">About Us</a>
+    <a href="login.html" class="login-btn">LOG IN</a>
+  </nav>
+</header>
+
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="carousel">
+  <div class="slides">
+    <img src="Images/carousel 1.jpg" class="slide active" alt="Slide 1">
+    <img src="Images/carousel 2.jpg" class="slide" alt="Slide 2">
+    <img src="Images/carousel 3.jpg" class="slide" alt="Slide 3">
+  </div>
+  
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <div class="dots">
+    <span class="dot active" onclick="setSlide(0)"></span>
+    <span class="dot" onclick="setSlide(1)"></span>
+    <span class="dot" onclick="setSlide(2)"></span>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer with Google Map -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>SAIT Comrades</h3>
+      <p>Brgy. Example, Cagayan de Oro City<br>
+         Misamis Oriental, Philippines</p>
+      <p>Email: saitcomrades@example.com</p>
+      <p>Phone: (088) 123-4567</p>
+    </div>
+
+    <div class="footer-map">
+      <h4>Find us on the map:</h4>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62818.48169817264!2d124.59224042898056!3d8.454236685290765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff8ffbe4ccf059%3A0x4cda2d5b0bfa2825!2sCagayan%20de%20Oro%2C%20Misamis%20Oriental!5e0!3m2!1sen!2sph!4v1625456781234!5m2!1sen!2sph" 
+        width="100%" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 SAIT Comrades. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
